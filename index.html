@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GigaFleet — Fleet Operations Platform</title>
+  <meta name="description" content="GigaFleet is the operating system for serious waste haulers. Dispatch, routing, field operations, client portals, analytics, and SB1383 compliance — built for municipal and commercial waste operators." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gigafleet.com/" />
+  <meta property="og:title" content="GigaFleet — Fleet Operations Platform" />
+  <meta property="og:description" content="The operating system for serious waste haulers. Running live contracts across the US — City of Scottsdale, WM Colorado, RecycLA." />
+  <meta property="og:image" content="assets/screenshots/home.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GigaFleet — Fleet Operations Platform" />
+  <meta name="twitter:description" content="The operating system for serious waste haulers." />
+  <meta name="twitter:image" content="assets/screenshots/home.jpg" />
+
+  <!-- Theme color for browser chrome -->
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       1. NAV — Sticky header, transparent → solid on scroll
+       ============================================================ -->
+  <header id="site-nav" class="site-nav" role="banner" aria-label="Site navigation">
+    <div class="nav-inner container">
+
+      <a href="/" class="nav-logo" aria-label="GigaFleet home">
+        <span class="nav-logo__mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#0D9488"/>
+            <path d="M8 10h10l4 6-4 6H8l4-6-4-6Z" fill="#ffffff" opacity="0.95"/>
+          </svg>
+        </span>
+        <span class="nav-logo__wordmark">Giga<strong>Fleet</strong></span>
+      </a>
+
+      <!-- Primary nav links -->
+      <nav class="nav-links" aria-label="Primary">
+        <ul role="list">
+          <li><a href="#platform" class="nav-link">Platform</a></li>
+          <li><a href="#operations" class="nav-link">Operations</a></li>
+          <li><a href="#intelligence" class="nav-link">Intelligence</a></li>
+          <li><a href="#sb1383" class="nav-link">SB1383</a></li>
+          <li><a href="#customers" class="nav-link">Customers</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right-side controls -->
+      <div class="nav-actions">
+        <a href="/login" class="nav-link nav-link--login">Sign in</a>
+        <a href="#demo" class="btn btn--primary btn--sm nav-cta">Book a Demo</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="nav-hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+      >
+        <span class="nav-hamburger__bar"></span>
+        <span class="nav-hamburger__bar"></span>
+        <span class="nav-hamburger__bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <nav aria-label="Mobile primary">
+        <ul role="list">
+          <li><a href="#platform" class="mobile-nav-link">Platform</a></li>
+          <li><a href="#operations" class="mobile-nav-link">Operations</a></li>
+          <li><a href="#intelligence" class="mobile-nav-link">Intelligence</a></li>
+          <li><a href="#sb1383" class="mobile-nav-link">SB1383</a></li>
+          <li><a href="#customers" class="mobile-nav-link">Customers</a></li>
+          <li><a href="/login" class="mobile-nav-link">Sign in</a></li>
+          <li><a href="#demo" class="btn btn--primary mobile-cta">Book a Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       Main content
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- 2. HERO ─────────────────────────────────────────────────── -->
+    <section
+      id="hero"
+      class="section section--dark section--hero"
+      aria-label="Hero — Operations built for serious waste haulers"
+    >
+      <div class="gf-hero">
+        <div class="gf-hero-inner">
+
+          <!-- LEFT — text + CTAs -->
+          <div class="gf-hero-text">
+
+            <div class="gf-eyebrow" aria-label="Live deployments">
+              <span class="gf-eyebrow-pulse" aria-hidden="true"></span>
+              <span class="gf-eyebrow-text">
+                Live: Scottsdale
+                <span class="gf-eyebrow-sep">·</span>
+                Tucson
+                <span class="gf-eyebrow-sep">·</span>
+                WM Colorado
+                <span class="gf-eyebrow-sep">·</span>
+                RecycLA
+              </span>
+            </div>
+
+            <h1 class="gf-headline">
+              Operations built for<br>
+              <span class="gf-accent">serious</span> waste haulers.
+            </h1>
+
+            <p class="gf-subhead">
+              From dispatch to SB1383 compliance — one platform, your brand.
+              Auto-routing, offline-first mobile, project-based billing, and
+              customer portals built to match your workflow.
+            </p>
+
+            <div class="gf-ctas">
+              <a href="#demo" class="gf-btn-primary">
+                Book a Demo
+                <span class="gf-btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#platform" class="gf-btn-ghost">
+                See the Platform
+                <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+
+            <div class="gf-features" aria-label="Key capabilities">
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>Offline-first mobile</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>Auto-routing</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>White-label portals</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>REST APIs + Webhooks</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>BigQuery analytics</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>SB1383 compliant</span>
+            </div>
+
+          </div><!-- /gf-hero-text -->
+
+          <!-- RIGHT — device composite -->
+          <div class="gf-devices" aria-hidden="true">
+
+            <div class="gf-device gf-device-laptop">
+              <div class="gf-device-chrome">
+                <span class="d d-r"></span><span class="d d-y"></span><span class="d d-g"></span>
+                <span class="gf-device-chrome-bar"></span>
+              </div>
+              <img src="assets/screenshots/home.jpg" alt="GigaFleet dispatcher dashboard" loading="eager" decoding="async">
+            </div>
+
+            <div class="gf-device gf-device-tablet">
+              <div class="gf-device-chrome">
+                <span class="d d-r"></span><span class="d d-y"></span><span class="d d-g"></span>
+                <span class="gf-device-chrome-bar"></span>
+              </div>
+              <img src="assets/screenshots/tablet.jpg" alt="Driver Console showing RecycLA route completion" loading="eager" decoding="async">
+            </div>
+
+            <div class="gf-device gf-device-phone">
+              <div class="gf-device-chrome"></div>
+              <img src="assets/screenshots/mobile.jpg" alt="Mobile driver app — task list" loading="eager" decoding="async">
+            </div>
+
+          </div><!-- /gf-devices -->
+
+        </div><!-- /gf-hero-inner -->
+      </div><!-- /gf-hero -->
+    </section>
+
+    <!-- 3. TRUST BAR ────────────────────────────────────────────── -->
+    <section
+      id="trust"
+      class="section section--light section--trust"
+      aria-label="Trusted operators"
+    >
+      <div class="gf-trust">
+        <div class="gf-trust-inner">
+          <p class="gf-trust-label">Trusted by operators running contracts across the US</p>
+          <div class="gf-trust-pills" role="list" aria-label="Current customers">
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>City of Scottsdale</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>City of Tucson</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>WM Colorado</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>FleetGenius</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Sierra Container Group</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>RecycLA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. METRICS ──────────────────────────────────────────────── -->
+    <section
+      id="metrics"
+      class="section section--dark section--metrics"
+      aria-label="Platform metrics"
+    >
+      <div class="gf-m" aria-labelledby="gf-m-headline">
+        <div class="gf-m__inner">
+
+          <span class="gf-m__eyebrow">By the numbers</span>
+
+          <h2 class="gf-m__headline" id="gf-m-headline">
+            Numbers from operations,<br>
+            <span class="gf-m__headline-kicker">not marketing.</span>
+          </h2>
+
+          <div class="gf-m__grid">
+
+            <div class="gf-m__card">
+              <span class="gf-m__stat">36</span>
+              <div class="gf-m__divider"></div>
+              <p class="gf-m__label">Platform features ahead of competitors</p>
+            </div>
+
+            <div class="gf-m__card">
+              <span class="gf-m__stat">8</span>
+              <div class="gf-m__divider"></div>
+              <p class="gf-m__label">Dedicated app surfaces</p>
+              <p class="gf-m__sub">Admin&thinsp;·&thinsp;Mobile&thinsp;·&thinsp;Tablet&thinsp;·&thinsp;Portal<br>Resident&thinsp;·&thinsp;Demo&thinsp;·&thinsp;API&thinsp;·&thinsp;Webhooks</p>
+            </div>
+
+            <div class="gf-m__card gf-m__card--green">
+              <span class="gf-m__stat">99.99999%</span>
+              <div class="gf-m__divider"></div>
+              <p class="gf-m__label">Infrastructure uptime</p>
+              <p class="gf-m__sub">Firebase&thinsp;/&thinsp;Google Edge</p>
+            </div>
+
+            <div class="gf-m__card">
+              <span class="gf-m__stat">0</span>
+              <div class="gf-m__divider"></div>
+              <p class="gf-m__label">Single points of failure.</p>
+              <p class="gf-m__sub">Firebase-backed, always-on.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PLATFORM ─────────────────────────────────────────────── -->
+    <section
+      id="platform"
+      class="section section--light section--platform"
+      aria-label="Platform surfaces"
+    >
+      <div class="platform">
+        <div class="platform__inner">
+
+          <header class="platform__header">
+            <p class="platform__eyebrow" aria-hidden="true">The Platform</p>
+            <h2 class="platform__headline" id="platform-headline">Every surface your operation needs.</h2>
+            <p class="platform__sub">From the dispatch room to the cab, from the contractor to the city contract-holder — GigaFleet covers every role in the operation.</p>
+          </header>
+
+          <div class="platform__grid">
+
+            <article class="card card--dispatcher">
+              <div class="card__image">
+                <img src="assets/screenshots/home.jpg" alt="GigaFleet admin home showing the full module grid: Operations, Schedule, CRM, Billing, Reports, Forms, and more" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="chip chip--web">Web App</span>
+                <h3 class="card__title">Dispatcher Dashboard</h3>
+                <p class="card__desc">Route, schedule, and manage your entire operation from one screen. Every module in one place.</p>
+                <a href="#" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="card card--mobile">
+              <div class="card__image">
+                <img src="assets/screenshots/mobile.jpg" alt="GigaFleet mobile driver app showing dark-theme route and stop detail view" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="chip chip--mobile">iOS / Android</span>
+                <h3 class="card__title">Driver Mobile App</h3>
+                <p class="card__desc">Offline-first. GPS-tracked. Photo-proof at every stop, even without signal.</p>
+                <a href="#" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="card card--tablet">
+              <div class="card__image">
+                <img src="assets/screenshots/tablet.jpg" alt="Driver Console tablet showing RecycLA route with real-time completion tracking" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="chip chip--tablet">Tablet</span>
+                <h3 class="card__title">In-Truck Tablet Console</h3>
+                <p class="card__desc">Purpose-built for the cab. Real-time route visualization, telemetry, and completion tracking.</p>
+                <a href="#" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="card card--portal">
+              <div class="card__image">
+                <img src="assets/screenshots/client-portal.jpg" alt="Client portal Special Projects view: 600 stops, 405 completed, 68% progress, 30 exceptions flagged" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="chip chip--portal">Web Portal</span>
+                <h3 class="card__title">Client Portal</h3>
+                <p class="card__desc">Contract-holder visibility into project progress. Scoped to their data, not your whole operation.</p>
+                <a href="#" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="card card--dispatch">
+              <div class="card__image">
+                <img src="assets/screenshots/dispatch.jpg" alt="Live dispatch map showing vehicle positions, territory boundaries, and real-time route status" loading="lazy">
+              </div>
+              <div class="card__body">
+                <span class="chip chip--web">Web App</span>
+                <h3 class="card__title">Live Dispatch Map</h3>
+                <p class="card__desc">Real-time vehicle positions, geo-fencing, territory management, and live status from the field.</p>
+                <a href="#" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+          </div><!-- /platform__grid -->
+        </div><!-- /platform__inner -->
+      </div><!-- /platform -->
+    </section>
+
+    <!-- 6. OPERATIONS CORE ───────────────────────────────────────── -->
+    <section
+      id="operations"
+      class="section section--dark section--operations"
+      aria-label="Operations core"
+    >
+      <section class="gf-section ops-core" aria-labelledby="ops-heading">
+        <div class="gf-container">
+          <div class="ops-layout">
+
+            <div class="ops-content">
+
+              <span class="gf-eyebrow" aria-hidden="true">
+                <span class="gf-eyebrow__rule"></span>
+                Operations Core
+              </span>
+
+              <h2 class="gf-h2" id="ops-heading">
+                Dispatch built for the complexity of commercial&nbsp;waste.
+              </h2>
+
+              <p class="gf-intro">
+                Commercial waste isn't residential. You're managing contracts, territories,
+                exceptions, sub-haulers, and compliance obligations simultaneously.
+                GigaFleet's operations core is purpose-built for this complexity.
+              </p>
+
+              <ul class="ops-features" aria-label="Operations Core capabilities">
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/>
+                      <path d="M7 6.4 C11 6.4 11 17.6 17 17.6"/>
+                      <path d="M16 15.2 l3 2.4 -3 2.4"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Auto-routing</div>
+                    <div class="ops-feature__desc">Optimize multi-stop routes automatically with constraint-aware scheduling.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="6" y="4" width="14" height="12" rx="2" stroke-opacity=".35"/>
+                      <rect x="3" y="8" width="14" height="12" rx="2"/>
+                      <path d="M7 14h6M7 17h4"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Floating Tasks</div>
+                    <div class="ops-feature__desc">Unscheduled work items that get absorbed into routes as capacity allows.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/>
+                      <rect x="8" y="2" width="8" height="4" rx="1.5"/>
+                      <path d="M9 14l2.5 2.5 4-5"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Work Orders</div>
+                    <div class="ops-feature__desc">Full job lifecycle tracking from dispatch to completion and billing.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9" stroke-dasharray="3.2 2.4"/>
+                      <path d="M12 7a2.8 2.8 0 0 1 2.8 2.8 c0 2.2-2.8 5.2-2.8 5.2 S9.2 12 9.2 9.8 A2.8 2.8 0 0 1 12 7z"/>
+                      <circle cx="12" cy="9.8" r=".9" fill="currentColor" stroke="none"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Geo-fencing</div>
+                    <div class="ops-feature__desc">Virtual perimeters with automatic entry/exit events and alerts.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <path d="M3 10h18M10 10v11"/>
+                      <circle cx="15.5" cy="15.5" r="1.2" fill="currentColor" stroke="none" opacity=".55"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Territory Management</div>
+                    <div class="ops-feature__desc">Define, visualize, and enforce service territories by contract.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="2" width="6" height="4" rx="1"/>
+                      <rect x="2" y="17" width="6" height="5" rx="1"/>
+                      <rect x="16" y="17" width="6" height="5" rx="1"/>
+                      <path d="M12 6v4.5"/>
+                      <path d="M12 10.5 H5 V17"/>
+                      <path d="M12 10.5 H19 V17"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Sub-Organizations</div>
+                    <div class="ops-feature__desc">Manage subsidiary haulers and contractors within one platform.</div>
+                  </div>
+                </li>
+
+                <li class="ops-feature">
+                  <div class="ops-feature__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2"/>
+                      <path d="M16 2v4M8 2v4M3 10h18"/>
+                      <rect x="7.5" y="14" width="3" height="3" rx=".6" fill="currentColor" stroke="none"/>
+                      <rect x="13.5" y="14" width="3" height="3" rx=".6" fill="currentColor" stroke="none" opacity=".4"/>
+                    </svg>
+                  </div>
+                  <div class="ops-feature__text">
+                    <div class="ops-feature__title">Scheduling &amp; Calendar</div>
+                    <div class="ops-feature__desc">Forward-looking schedule management with conflict detection.</div>
+                  </div>
+                </li>
+
+              </ul>
+            </div><!-- /ops-content -->
+
+            <div class="ops-visual">
+              <figure class="ops-frame" role="img" aria-label="GigaFleet dispatch console — live route map, driver assignments, and territory overlays">
+                <div class="ops-frame__bar" aria-hidden="true">
+                  <div class="ops-frame__dots">
+                    <div class="ops-frame__dot ops-frame__dot--r"></div>
+                    <div class="ops-frame__dot ops-frame__dot--y"></div>
+                    <div class="ops-frame__dot ops-frame__dot--g"></div>
+                  </div>
+                  <span class="ops-frame__bar-label">GigaFleet &mdash; Dispatch Console</span>
+                </div>
+                <div class="ops-frame__screen">
+                  <img src="assets/screenshots/dispatch.jpg" alt="Dispatch map view showing driver positions, route assignments, and territory zones" loading="lazy" width="1200" height="750" />
+                </div>
+                <div class="ops-frame__footer" aria-hidden="true">
+                  <span class="ops-frame__status"><span class="ops-frame__led"></span>Live</span>
+                  <span class="ops-frame__footer-caption">Demo Org &nbsp;&middot;&nbsp; Today&rsquo;s Routes</span>
+                </div>
+              </figure>
+            </div>
+
+          </div><!-- /ops-layout -->
+        </div><!-- /gf-container -->
+      </section>
+    </section>
+
+    <!-- 7. FIELD & DRIVER ───────────────────────────────────────── -->
+    <section
+      id="field"
+      class="section section--light section--field"
+      aria-label="Field and driver surface"
+    >
+      <section class="gf-section field-driver" aria-labelledby="fd-heading">
+        <div class="gf-container">
+          <div class="fd-layout">
+
+            <div class="fd-content">
+
+              <span class="gf-eyebrow" aria-hidden="true">
+                <span class="gf-eyebrow__rule"></span>
+                Field &amp; Driver
+              </span>
+
+              <h2 class="gf-h2" id="fd-heading">The driver surface,&nbsp;reinvented.</h2>
+
+              <div class="fd-badge" role="note" aria-label="Offline-first: works with zero signal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 6.5C4.8 3 8.8 1.5 12 1.5s7.2 1.5 11 5"/>
+                  <path d="M5 11c2-1.8 4.4-2.8 7-2.8"/>
+                  <line x1="2" y1="2" x2="22" y2="22"/>
+                  <circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+                Works with zero signal &mdash; always
+              </div>
+
+              <p class="gf-intro">
+                No signal? Not a problem. GigaFleet's mobile suite works completely
+                offline — tasks, photos, forms, and signatures all queue locally and
+                sync in order when connectivity returns.
+              </p>
+
+              <div class="fd-grid-wrap">
+                <ul class="fd-grid" aria-label="Field & Driver capabilities">
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                        <circle cx="12" cy="13" r="3"/>
+                        <path d="M19.5 3a2 2 0 0 1 2 2c0 1.8-2 4-2 4s-2-2.2-2-4a2 2 0 0 1 2-2z" stroke-width="1.5"/>
+                        <circle cx="19.5" cy="5" r=".7" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">GPS-Stamped Photos</div>
+                    <div class="fd-card__desc">Coordinates, timestamp, battery, driver ID, and device ID burned into every photo.</div>
+                  </li>
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        <circle cx="12" cy="16.5" r="1.6" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">Cryptographic Signatures</div>
+                    <div class="fd-card__desc">Delivery and inspection proof that can't be forged or disputed.</div>
+                  </li>
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="2,12 5,12 7,5.5 10.5,18.5 13.5,8.5 16,13.5 18,12 22,12"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">Full Telemetry</div>
+                    <div class="fd-card__desc">GPS accuracy radius, heading, altitude, and battery level — not just a dot on a map.</div>
+                  </li>
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2.5 2.5 4-4.5"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">Watermarked Evidence</div>
+                    <div class="fd-card__desc">Every photo is legally defensible with embedded metadata — immutable and chain-of-custody ready.</div>
+                  </li>
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                        <path d="M6 7.5l3 3-3 3"/>
+                        <path d="M11.5 13.5h6"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">Driver Console</div>
+                    <div class="fd-card__desc">Purpose-built tablet display for the cab with real-time route and telemetry.</div>
+                  </li>
+
+                  <li class="fd-card">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 6.5C4.8 3 8.8 1.5 12 1.5s7.2 1.5 11 5"/>
+                        <path d="M5 11c2-1.8 4.4-2.8 7-2.8"/>
+                        <line x1="2" y1="2" x2="22" y2="22"/>
+                        <circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__title">Offline-First</div>
+                    <div class="fd-card__desc">Complete functionality with zero signal. Nothing waits for connectivity — queue and sync, in order.</div>
+                  </li>
+
+                  <li class="fd-card fd-card--wide">
+                    <div class="fd-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a5.5 5.5 0 0 1 5.5 5.5C17.5 12.5 12 19 12 19S6.5 12.5 6.5 7.5A5.5 5.5 0 0 1 12 2z"/>
+                        <circle cx="12" cy="7.5" r="1.8" fill="currentColor" stroke="none"/>
+                        <path d="M19 5.5a9 9 0 0 1 0 7.5" stroke-opacity=".4"/>
+                        <path d="M5 5.5a9 9 0 0 0 0 7.5" stroke-opacity=".4"/>
+                      </svg>
+                    </div>
+                    <div class="fd-card__body">
+                      <div class="fd-card__title">Real-Time Tracker</div>
+                      <div class="fd-card__desc">Live vehicle positions with status, heading, and last-known location — updated as vehicles move.</div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div><!-- /fd-grid-wrap -->
+
+            </div><!-- /fd-content -->
+
+            <div class="fd-visual" aria-hidden="true">
+              <div class="fd-devices">
+
+                <div class="fd-device fd-device--tablet">
+                  <div class="fd-device__chrome">
+                    <div class="fd-device__screen">
+                      <img src="assets/screenshots/tablet.jpg" alt="Driver Console on tablet — RecycLA route completion in dark theme" loading="lazy" width="1024" height="640" />
+                    </div>
+                  </div>
+                  <div class="fd-device__label">Driver Console</div>
+                </div>
+
+                <div class="fd-device fd-device--mobile">
+                  <div class="fd-device__chrome">
+                    <div class="fd-device__screen">
+                      <img src="assets/screenshots/mobile.jpg" alt="GigaFleet mobile driver app in dark theme" loading="lazy" width="375" height="812" />
+                    </div>
+                  </div>
+                  <div class="fd-device__label">Mobile Driver</div>
+                </div>
+
+              </div><!-- /fd-devices -->
+            </div><!-- /fd-visual -->
+
+          </div><!-- /fd-layout -->
+        </div><!-- /gf-container -->
+      </section>
+    </section>
+
+    <!-- 8. INTELLIGENCE ─────────────────────────────────────────── -->
+    <section
+      id="intelligence"
+      class="section section--dark section--intelligence"
+      aria-label="Business intelligence"
+    >
+      <section class="s-intel" aria-labelledby="intel-h2">
+        <div class="container">
+
+          <div class="intel-header">
+
+            <div>
+              <span class="eyebrow">Intelligence &amp; Automation</span>
+              <h2 class="intel-headline" id="intel-h2">Visibility from the curb to the boardroom.</h2>
+              <p class="intel-intro">GigaFleet connects field operations to BigQuery analytics, giving managers real-time dashboards and historical analysis without a BI team.</p>
+            </div>
+
+            <div class="pipeline" aria-label="GigaFleet data pipeline: field operations to dashboards">
+
+              <div class="pipe-node">
+                <div class="pipe-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <rect x="3" y="9" width="7" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="12" y="5" width="7" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M6.5 6.5V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="6.5" cy="4.5" r="1.5" fill="currentColor" opacity="0.6"/>
+                  </svg>
+                </div>
+                <span class="pipe-label">Field Ops</span>
+              </div>
+
+              <div class="pipe-arrow" aria-hidden="true">
+                <svg viewBox="0 0 40 16" fill="none" preserveAspectRatio="none">
+                  <line x1="2" y1="8" x2="34" y2="8" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <path d="M32 5L37 8L32 11" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div class="pipe-node">
+                <div class="pipe-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <ellipse cx="11" cy="7" rx="7" ry="3" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M4 7v4c0 1.657 3.134 3 7 3s7-1.343 7-3V7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M4 11v4c0 1.657 3.134 3 7 3s7-1.343 7-3v-4" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="pipe-label">GigaFleet DB</span>
+              </div>
+
+              <div class="pipe-arrow" aria-hidden="true">
+                <svg viewBox="0 0 40 16" fill="none" preserveAspectRatio="none">
+                  <line x1="2" y1="8" x2="34" y2="8" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <path d="M32 5L37 8L32 11" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div class="pipe-node">
+                <div class="pipe-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M4 16 L8 10 L12 13 L16 7 L20 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="3" y="3" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                  </svg>
+                </div>
+                <span class="pipe-label">BigQuery</span>
+              </div>
+
+              <div class="pipe-arrow" aria-hidden="true">
+                <svg viewBox="0 0 40 16" fill="none" preserveAspectRatio="none">
+                  <line x1="2" y1="8" x2="34" y2="8" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <path d="M32 5L37 8L32 11" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div class="pipe-node">
+                <div class="pipe-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <rect x="3" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="12" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="3" y="11" width="16" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="pipe-label">Dashboards</span>
+              </div>
+            </div><!-- /.pipeline -->
+          </div><!-- /.intel-header -->
+
+          <div class="intel-bento" role="list">
+
+            <article class="tile tile-dash" role="listitem">
+              <span class="tile-badge">Analytics</span>
+              <h3 class="tile-name">Custom Dashboard Builder</h3>
+              <p class="tile-desc">Drag-and-drop dashboard IDE with real-time and historical operational data. Build KPI tiles, route completion charts, and exception trackers — no BI team required.</p>
+              <div class="tile-mini" aria-hidden="true">
+                <span style="height:60%"></span><span style="height:80%"></span><span style="height:45%"></span>
+                <span style="height:95%"></span><span style="height:70%"></span><span style="height:55%"></span>
+                <span style="height:85%"></span><span style="height:40%"></span><span style="height:75%"></span>
+                <span style="height:90%"></span><span style="height:65%"></span><span style="height:50%"></span>
+              </div>
+            </article>
+
+            <article class="tile tile-bq" role="listitem">
+              <span class="tile-badge">Data</span>
+              <h3 class="tile-name">BigQuery Analytics</h3>
+              <p class="tile-desc">Raw operational data in Google BigQuery, partitioned by schedule date and ready for any downstream pipeline or analysis.</p>
+              <div class="tile-code" aria-hidden="true">
+                SELECT route_id, SUM(stops_completed)<br>
+                FROM `gf.routes`<br>
+                WHERE schedule_date = @date<br>
+                GROUP BY route_id
+              </div>
+            </article>
+
+            <article class="tile tile-auto" role="listitem">
+              <span class="tile-badge">Automation</span>
+              <h3 class="tile-name">Automata / Rules Engine</h3>
+              <p class="tile-desc">If-this-then-that automation for status changes, SLA breach alerts, and operational workflows — no code required.</p>
+            </article>
+
+            <article class="tile tile-dec" role="listitem">
+              <span class="tile-badge">Logic</span>
+              <h3 class="tile-name">Decision Trees</h3>
+              <p class="tile-desc">Visual flow builders for complex conditional logic in driver forms, dispatch routing, and exception handling.</p>
+            </article>
+
+            <article class="tile tile-ai" role="listitem">
+              <span class="tile-badge">AI</span>
+              <h3 class="tile-name">AI Import Mapping</h3>
+              <p class="tile-desc">Upload any CSV — AI maps columns to your schema automatically. No more hand-mapping client data files every contract cycle.</p>
+            </article>
+
+            <article class="tile tile-rep" role="listitem">
+              <span class="tile-badge">Reporting</span>
+              <h3 class="tile-name">Reports</h3>
+              <p class="tile-desc">Scheduled and on-demand reports across routes, drivers, compliance, and billing. Exportable and available via REST API.</p>
+            </article>
+
+            <article class="tile tile-alrt" role="listitem">
+              <span class="tile-badge">Operations</span>
+              <h3 class="tile-name">Alerts</h3>
+              <p class="tile-desc">Configurable alert rules for exceptions, SLA breaches, and field events — delivered via push notification, email, or webhook.</p>
+            </article>
+
+          </div><!-- /.intel-bento -->
+        </div><!-- /.container -->
+      </section>
+    </section>
+
+    <!-- 9. SB1383 ───────────────────────────────────────────────── -->
+    <section
+      id="sb1383"
+      class="section section--teal section--sb1383"
+      aria-label="SB1383 compliance"
+    >
+      <section class="s-sb1383" aria-labelledby="sb-h2">
+        <div class="container sb-inner">
+
+          <header class="sb-header">
+            <span class="eyebrow">SB1383 Compliance</span>
+            <h2 class="sb-headline" id="sb-h2">The only platform<br>built for SB1383.</h2>
+            <p class="sb-sub">California's organic waste diversion law requires route-level tracking, phase management, and CalRecycle reporting. GigaFleet's Special Projects module is purpose-built for this obligation — not retrofitted.</p>
+          </header>
+
+          <div class="sb-stats" role="region" aria-label="Live SB1383 project metrics">
+            <div class="sb-stat">
+              <span class="stat-num" aria-label="600 total stops">600</span>
+              <span class="stat-lbl">Total Stops</span>
+            </div>
+            <div class="sb-stat">
+              <span class="stat-num" aria-label="405 completed">405</span>
+              <span class="stat-lbl">Completed</span>
+            </div>
+            <div class="sb-stat">
+              <span class="stat-num is-accent" aria-label="68 percent completion rate">68%</span>
+              <span class="stat-lbl">Completion Rate</span>
+            </div>
+            <div class="sb-stat">
+              <span class="stat-num is-amber" aria-label="30 exceptions tracked">30</span>
+              <span class="stat-lbl">Exceptions Tracked</span>
+            </div>
+          </div>
+
+          <p class="sb-live">
+            <span class="live-dot" aria-hidden="true"></span>
+            Live data from an active SB1383 compliance project
+          </p>
+
+          <div class="sb-split">
+
+            <figure class="sb-shot">
+              <img src="assets/screenshots/client-portal.jpg" alt="GigaFleet Special Projects dashboard showing SB1383 compliance: 600 stops, 405 completed, 68% rate, 30 exceptions" loading="lazy">
+              <figcaption class="sb-shot-cap">Special Projects module — WM Colorado / RecycLA</figcaption>
+            </figure>
+
+            <ul class="sb-features" role="list">
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">Route-level stop tracking</div>
+                  <div class="feat-desc">Diversion percentage calculated per route, phase, and territory — not just aggregate totals.</div>
+                </div>
+              </li>
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">Phase and territory management</div>
+                  <div class="feat-desc">Multi-phase rollouts across districts with configurable templates and per-phase progress tracking.</div>
+                </div>
+              </li>
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">Address-level compliance status</div>
+                  <div class="feat-desc">Every address tracked — compliant, pending, or exception — with full audit history and timestamps.</div>
+                </div>
+              </li>
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">Exception logging and resolution</div>
+                  <div class="feat-desc">Capture, categorize, and resolve exceptions with GPS-stamped driver photos as evidence.</div>
+                </div>
+              </li>
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">CalRecycle reporting export</div>
+                  <div class="feat-desc">Generate CalRecycle-ready compliance reports directly from live project data — no manual assembly.</div>
+                </div>
+              </li>
+
+              <li class="sb-feat">
+                <svg class="feat-check" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.25" opacity="0.25"/>
+                  <path d="M5.5 9.5L7.75 11.75L12.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <div class="feat-name">Real-time project progress dashboard</div>
+                  <div class="feat-desc">Project managers and haulers share the same live view — no reports to pull, no sync delays.</div>
+                </div>
+              </li>
+
+            </ul>
+          </div><!-- /.sb-split -->
+
+          <div class="sb-cta">
+            <a href="#demo" class="sb-cta-btn">
+              See how WM Colorado runs SB1383 compliance on GigaFleet
+              <span class="cta-arrow" aria-hidden="true">&#x2192;</span>
+            </a>
+          </div>
+
+        </div><!-- /.container.sb-inner -->
+      </section>
+    </section>
+
+    <!-- 10. TECHNICAL ARCHITECTURE ──────────────────────────────── -->
+    <section
+      id="architecture"
+      class="section section--dark section--architecture"
+      aria-label="Technical architecture"
+    >
+      <section id="gf-arch">
+        <div class="gf-wrap">
+
+          <header class="gf-arch-hd">
+            <span class="gf-eyebrow">Infrastructure</span>
+            <h2 class="gf-h2">Built for the real world —<br>not the demo room.</h2>
+            <p class="gf-lede">Infrastructure and mobile architecture choices that operators in the field depend on, not features that look good in a deck.</p>
+          </header>
+
+          <div class="gf-arch-bento">
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Mobile</div>
+              <div class="gf-arch-name">Offline-First Mobile</div>
+              <div class="gf-arch-body">Full functionality with zero signal. Tasks, photos, and forms queue locally and sync in sequence when connectivity returns. No data loss, ever.</div>
+            </div>
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Evidence</div>
+              <div class="gf-arch-name">Photo Metadata</div>
+              <div class="gf-arch-body">GPS coordinates, timestamp, battery level, driver ID, and device fingerprint embedded in every photo. Legally defensible proof of service.</div>
+            </div>
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Integrity</div>
+              <div class="gf-arch-name">Cryptographic Proof</div>
+              <div class="gf-arch-body">Delivery and inspection signatures are encoded — not just tapped. Every record carries proof that cannot be fabricated, backdated, or disputed.</div>
+            </div>
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/>
+                  <line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="22" x2="12" y2="18"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Telemetry</div>
+              <div class="gf-arch-name">Full Telemetry</div>
+              <div class="gf-arch-body">GPS accuracy radius, heading, altitude, speed, and battery level — not just a dot on a map. Every data point carries its own confidence reading.</div>
+            </div>
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Reliability</div>
+              <div class="gf-arch-name">99.99999% Uptime</div>
+              <div class="gf-arch-body">Firebase on Google's global edge network. Your operation doesn't stop because a server does. No maintenance windows, no regional outages to manage.</div>
+            </div>
+
+            <div class="gf-arch-tile">
+              <div class="gf-arch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 4v6h-6"/><path d="M1 20v-6h6"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/>
+                  <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+              </div>
+              <div class="gf-arch-label">Resilience</div>
+              <div class="gf-arch-name">Delayed Sync</div>
+              <div class="gf-arch-body">Photos, signatures, and GPS tracks sync in strict sequence even after extended offline periods — hours or days. The queue holds until the connection does.</div>
+            </div>
+
+          </div><!-- /bento -->
+        </div><!-- /wrap -->
+      </section>
+    </section>
+
+    <!-- 11. COMPARISON ──────────────────────────────────────────── -->
+    <section
+      id="comparison"
+      class="section section--light section--comparison"
+      aria-label="Competitive comparison"
+    >
+      <section id="gf-comparison">
+        <div class="gf-wrap">
+
+          <header class="gf-cmp-hd">
+            <span class="gf-eyebrow">Platform vs. Point Tool</span>
+            <h2 class="gf-h2">Not a subscription routing tool. A platform.</h2>
+            <p class="gf-lede">Subscription routing tools solve a narrow problem. GigaFleet solves operations.</p>
+          </header>
+
+          <div class="gf-cmp-outer">
+            <table class="gf-cmp-table">
+              <colgroup>
+                <col class="col-feat"><col class="col-gf"><col class="col-other">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="gf-cmp-th th-feat">Capability</th>
+                  <th class="gf-cmp-th th-gf">GigaFleet</th>
+                  <th class="gf-cmp-th th-other">Subscription Routing Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Project-based billing</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Bill by project scope, milestones, or contract deliverables — not seat count</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Subscription-only flat fees with no project modeling</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">SB1383 compliance module</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Dedicated SB1383 module with CalRecycle reporting, diversion tracking, and per-route compliance data</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">No compliance features — California haulers must build their own reporting layer</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Per-customer white-label</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Your brand, your domain, your portals — per-client customization with no shared branding</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-limited">~</span><span class="gf-cmp-cell-text t-limited">Shared branded template — logo swap only, no per-client domain or portal ownership</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Internal ERP for receivables</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Receivables, invoicing, and sales pipeline built in — operations and finance in one system</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Depends on third-party integrations — QuickBooks, Stripe, or a custom sync layer</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Offline-first field operations</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Tasks, photos, forms, and signatures fully functional with zero signal — sync queues in sequence on reconnect</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Requires active connectivity — drivers in low-signal areas lose access entirely</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Multi-org / sub-hauler management</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Sub-orgs, territories, shared haulers, and cross-org dispatch — built for contracted operations</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Single-tenant only — one org, one account, no sub-org or contractor management</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">REST API + Webhooks in production</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">REST API and Webhooks live today — City of Scottsdale, City of Tucson, FleetGenius, and Tower-UWS are all connected</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-limited">~</span><span class="gf-cmp-cell-text t-limited">Limited API coverage or Webhook support on roadmap — no production B2B integrations</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Client + Resident portals</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Both portals included — contract-holders get a live witness view; residents get a self-service tracking portal</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-limited">~</span><span class="gf-cmp-cell-text t-limited">Extra add-on or unavailable — no built-in witness portal for contract-holding clients</span></div></td>
+                </tr>
+
+                <tr>
+                  <td class="gf-cmp-td td-feat">Custom Dashboard Builder</td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Dashboard Builder with BigQuery analytics — build any view, any metric, any slice of your data</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Fixed reports only — no custom queries, no cross-dataset analysis, no BigQuery export</span></div></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div><!-- /outer -->
+
+        </div><!-- /wrap -->
+      </section>
+    </section>
+
+    <!-- 12. CUSTOMERS ───────────────────────────────────────────── -->
+    <section
+      id="customers"
+      class="section section--light section--customers"
+      aria-label="Customer case studies"
+    >
+      <section id="gf-customers">
+        <div class="gf-wrap">
+
+          <header class="gf-cust-hd">
+            <span class="gf-eyebrow">Live Operations</span>
+            <h2 class="gf-h2">Operating live in the field.</h2>
+            <p class="gf-lede">Real haulers running real contracts — not pilot programs or case studies.</p>
+          </header>
+
+          <div class="gf-cust-grid">
+
+            <div class="gf-cust-card">
+              <span class="gf-cust-tag tag-muni">Municipal</span>
+              <div class="gf-cust-name">City of Scottsdale</div>
+              <div class="gf-cust-desc">Municipal waste tracking, field compliance reporting, and Webhook integration with city systems. Live B2B data exchange in production.</div>
+              <div class="gf-cust-live"><span class="gf-cust-dot"></span>Live</div>
+            </div>
+
+            <div class="gf-cust-card">
+              <span class="gf-cust-tag tag-muni">Municipal</span>
+              <div class="gf-cust-name">City of Tucson</div>
+              <div class="gf-cust-desc">Route management, field operations, and real-time status reporting for city-managed hauler contracts across multiple service zones.</div>
+              <div class="gf-cust-live"><span class="gf-cust-dot"></span>Live</div>
+            </div>
+
+            <div class="gf-cust-card">
+              <span class="gf-cust-tag tag-comm">Commercial Hauler</span>
+              <div class="gf-cust-name">WM Colorado</div>
+              <div class="gf-cust-desc">SB1383 organic waste diversion tracking and CalRecycle compliance reporting for one of the platform's highest-volume Special Projects operations.</div>
+              <div class="gf-cust-live"><span class="gf-cust-dot"></span>Live</div>
+            </div>
+
+            <div class="gf-cust-card">
+              <span class="gf-cust-tag tag-comm">Commercial Hauler</span>
+              <div class="gf-cust-name">FleetGenius</div>
+              <div class="gf-cust-desc">Commercial hauler dispatch, auto-routing, and customer management — with a live REST API integration connecting GigaFleet to their own reporting infrastructure.</div>
+              <div class="gf-cust-live"><span class="gf-cust-dot"></span>Live</div>
+            </div>
+
+            <div class="gf-cust-card">
+              <span class="gf-cust-tag tag-comm">Commercial Hauler</span>
+              <div class="gf-cust-name">Sierra Container Group</div>
+              <div class="gf-cust-desc">Multi-site commercial waste operations across contract zones, with client portal access giving contract-holders a live witness view of service completion.</div>
+              <div class="gf-cust-live"><span class="gf-cust-dot"></span>Live</div>
+            </div>
+
+          </div><!-- /grid -->
+        </div><!-- /wrap -->
+      </section>
+    </section>
+
+    <!-- 13. DEMO CTA ─────────────────────────────────────────────── -->
+    <section
+      id="demo"
+      class="section section--dark section--demo gf-cta"
+      aria-labelledby="gf-cta-heading"
+    >
+
+      <!-- Engineering corner brackets -->
+      <svg class="gf-cta__bracket gf-cta__bracket--tl" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M 2 26 L 2 2 L 26 2" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="square" opacity="0.16"/>
+      </svg>
+      <svg class="gf-cta__bracket gf-cta__bracket--tr" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M 2 26 L 2 2 L 26 2" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="square" opacity="0.16"/>
+      </svg>
+      <svg class="gf-cta__bracket gf-cta__bracket--bl" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M 2 26 L 2 2 L 26 2" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="square" opacity="0.16"/>
+      </svg>
+      <svg class="gf-cta__bracket gf-cta__bracket--br" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M 2 26 L 2 2 L 26 2" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="square" opacity="0.16"/>
+      </svg>
+
+      <div class="gf-cta__inner">
+
+        <div class="gf-cta__left">
+          <span class="gf-cta__eyebrow">Demo &amp; Evaluation</span>
+
+          <h2 class="gf-cta__headline" id="gf-cta-heading">
+            Built for operators<br>
+            who don't cut<br>
+            <em class="gf-cta__kicker">corners.</em>
+          </h2>
+
+          <p class="gf-cta__sub">
+            Book a 45-minute walkthrough tailored to your operation.
+            Yard tracker, SB1383 compliance, disposal-stop workflow, or whatever matters most to you —
+            we'll show you exactly what GigaFleet does for your use case.
+          </p>
+        </div>
+
+        <div class="gf-cta__right">
+          <div class="gf-cta__actions">
+            <a href="#" class="gf-cta__btn-primary">Book a Demo &nbsp;→</a>
+            <a href="mailto:stevenfenzl@me.com" class="gf-cta__btn-ghost">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1" y="3.5" width="14" height="10" rx="1.5"/>
+                <path d="M1.5 4.5 L8 9 L14.5 4.5"/>
+              </svg>
+              Email Steven Fenzl
+            </a>
+          </div>
+
+          <ul class="gf-cta__trust" aria-label="Evaluation assurances">
+            <li class="gf-cta__trust-item">
+              <span class="gf-cta__check" aria-hidden="true">
+                <svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg>
+              </span>
+              <span>No commitment required</span>
+            </li>
+            <li class="gf-cta__trust-item">
+              <span class="gf-cta__check" aria-hidden="true">
+                <svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg>
+              </span>
+              <span>Tailored to your workflow</span>
+            </li>
+            <li class="gf-cta__trust-item">
+              <span class="gf-cta__check" aria-hidden="true">
+                <svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg>
+              </span>
+              <span>Running in production today</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       14. FOOTER
+       ============================================================ -->
+  <footer id="site-footer" class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer-inner container">
+
+      <div class="footer-brand">
+        <a href="/" class="nav-logo footer-logo" aria-label="GigaFleet home">
+          <span class="nav-logo__mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="32" height="32" rx="6" fill="#0D9488"/>
+              <path d="M8 10h10l4 6-4 6H8l4-6-4-6Z" fill="#ffffff" opacity="0.95"/>
+            </svg>
+          </span>
+          <span class="nav-logo__wordmark">Giga<strong>Fleet</strong></span>
+        </a>
+        <p class="footer-tagline">The operating system for serious waste haulers.</p>
+        <address class="footer-contact" aria-label="Contact information">
+          <a href="mailto:hello@gigafleet.com" class="footer-contact__link">hello@gigafleet.com</a>
+        </address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Platform</h3>
+          <ul role="list">
+            <li><a href="#platform" class="footer-nav__link">Overview</a></li>
+            <li><a href="#operations" class="footer-nav__link">Dispatch &amp; Routing</a></li>
+            <li><a href="#field" class="footer-nav__link">Driver App</a></li>
+            <li><a href="#intelligence" class="footer-nav__link">Analytics</a></li>
+            <li><a href="#architecture" class="footer-nav__link">Architecture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Solutions</h3>
+          <ul role="list">
+            <li><a href="#sb1383" class="footer-nav__link">SB1383 Compliance</a></li>
+            <li><a href="#customers" class="footer-nav__link">Municipal</a></li>
+            <li><a href="#customers" class="footer-nav__link">Commercial Haulers</a></li>
+            <li><a href="#customers" class="footer-nav__link">Special Projects</a></li>
+            <li><a href="#comparison" class="footer-nav__link">Why GigaFleet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Integrations</h3>
+          <ul role="list">
+            <li><a href="#architecture" class="footer-nav__link">REST API</a></li>
+            <li><a href="#architecture" class="footer-nav__link">Webhooks</a></li>
+            <li><a href="#intelligence" class="footer-nav__link">BigQuery</a></li>
+            <li><a href="#architecture" class="footer-nav__link">White-label</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Company</h3>
+          <ul role="list">
+            <li><a href="#customers" class="footer-nav__link">Customers</a></li>
+            <li><a href="#demo" class="footer-nav__link">Book a Demo</a></li>
+            <li><a href="/login" class="footer-nav__link">Sign In</a></li>
+            <li><a href="mailto:hello@gigafleet.com" class="footer-nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p class="footer-bottom__copy">&copy; 2026 GIGA Enterprises. All rights reserved.</p>
+        <nav class="footer-bottom__links" aria-label="Legal">
+          <a href="/privacy" class="footer-bottom__link">Privacy Policy</a>
+          <a href="/terms" class="footer-bottom__link">Terms of Service</a>
+          <a href="/security" class="footer-bottom__link">Security</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button
+    id="scroll-top"
+    class="scroll-top"
+    aria-label="Scroll to top"
+    type="button"
+  >
+    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 14V4M4 9l5-5 5 5"/>
+    </svg>
+  </button>
+
+  <!-- ============================================================
+       Scripts
+       ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Nav: transparent → solid on scroll
+      var nav = document.getElementById('site-nav');
+      if (nav) {
+        var NAV_SCROLL_THRESHOLD = 40;
+        function updateNavState() {
+          if (window.scrollY > NAV_SCROLL_THRESHOLD) {
+            nav.classList.add('is-scrolled');
+          } else {
+            nav.classList.remove('is-scrolled');
+          }
+        }
+        window.addEventListener('scroll', updateNavState, { passive: true });
+        updateNavState();
+      }
+
+      // Mobile hamburger toggle
+      var hamburger = document.querySelector('.nav-hamburger');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function () {
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', String(!expanded));
+          hamburger.classList.toggle('is-open', !expanded);
+          mobileMenu.classList.toggle('is-open', !expanded);
+          mobileMenu.setAttribute('aria-hidden', String(expanded));
+          document.body.classList.toggle('mobile-menu-open', !expanded);
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.classList.remove('is-open');
+            mobileMenu.classList.remove('is-open');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.classList.toggle('mobile-menu-open', false);
+          });
+        });
+      }
+
+      // IntersectionObserver — .fade-in elements animate in on scroll
+      if ('IntersectionObserver' in window) {
+        var fadeObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              fadeObserver.unobserve(entry.target);
+            }
+          });
+        }, { root: null, rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(function (el) {
+          fadeObserver.observe(el);
+        });
+      } else {
+        document.querySelectorAll('.fade-in').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+
+      // Smooth scroll for all hash links
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var target = document.querySelector(anchor.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            var navHeight = nav ? nav.offsetHeight : 0;
+            var top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Deferred feature JS (scroll-to-top, CTA entrance animation) -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
