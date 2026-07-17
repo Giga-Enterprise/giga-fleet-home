@@ -11,7 +11,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gigafleet.com/" />
   <meta property="og:title" content="GigaFleet — Fleet Operations Platform" />
-  <meta property="og:description" content="The operating system for serious waste haulers. Running live contracts across the US — City of Scottsdale, WM Colorado, RecycLA." />
+  <meta property="og:description" content="The operating system for serious waste haulers. Built for municipal and commercial fleet operations across the US." />
   <meta property="og:image" content="assets/screenshots/home.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -76,7 +76,7 @@
       <!-- Right-side controls -->
       <div class="nav-actions">
         <!-- sign-in removed -->
-        <a href="#demo" class="btn btn--primary btn--sm nav-cta">Book a Demo</a>
+        <button type="button" class="btn btn--primary btn--sm nav-cta js-book-demo">Book a Demo</button>
       </div>
 
       <!-- Mobile hamburger -->
@@ -103,7 +103,7 @@
           <li><a href="#sb1383" class="mobile-nav-link">SB1383</a></li>
           <!-- <li><a href="#customers" class="mobile-nav-link">Customers</a></li> -->
           <!-- sign-in removed -->
-          <li><a href="#demo" class="btn btn--primary mobile-cta">Book a Demo</a></li>
+          <li><button type="button" class="btn btn--primary mobile-cta js-book-demo">Book a Demo</button></li>
         </ul>
       </nav>
     </div>
@@ -129,13 +129,9 @@
             <div class="gf-eyebrow" aria-label="Live deployments">
               <span class="gf-eyebrow-pulse" aria-hidden="true"></span>
               <span class="gf-eyebrow-text">
-                Live: Scottsdale
                 <span class="gf-eyebrow-sep">·</span>
-                Tucson
                 <span class="gf-eyebrow-sep">·</span>
-                WM Colorado
                 <span class="gf-eyebrow-sep">·</span>
-                RecycLA
               </span>
             </div>
 
@@ -151,10 +147,10 @@
             </p>
 
             <div class="gf-ctas">
-              <a href="#demo" class="gf-btn-primary">
+              <button type="button" class="gf-btn-primary js-book-demo">
                 Book a Demo
                 <span class="gf-btn-arrow" aria-hidden="true">→</span>
-              </a>
+              </button>
               <a href="#platform" class="gf-btn-ghost">
                 See the Platform
                 <span aria-hidden="true">↓</span>
@@ -188,7 +184,7 @@
                 <span class="d d-r"></span><span class="d d-y"></span><span class="d d-g"></span>
                 <span class="gf-device-chrome-bar"></span>
               </div>
-              <img src="assets/screenshots/tablet.jpg" alt="Driver Console showing RecycLA route completion" loading="eager" decoding="async">
+              <img src="assets/screenshots/tablet.jpg" alt="Driver Console showing live route completion" loading="eager" decoding="async">
             </div>
 
             <div class="gf-device gf-device-phone">
@@ -211,13 +207,11 @@
       <div class="gf-trust">
         <div class="gf-trust-inner">
           <p class="gf-trust-label">Trusted by operators running contracts across the US</p>
-          <div class="gf-trust-pills" role="list" aria-label="Current customers">
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>City of Scottsdale</span>
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>City of Tucson</span>
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>WM Colorado</span>
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>FleetGenius</span>
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Sierra Container Group</span>
-            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>RecycLA</span>
+          <div class="gf-trust-pills" role="list" aria-label="Trusted by operators">
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Municipal Waste</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Commercial Haulers</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Special Projects</span>
+            <span class="gf-trust-pill" role="listitem"><span class="gf-trust-pill-dot" aria-hidden="true"></span>Multi-org / White-label</span>
           </div>
         </div>
       </div>
@@ -316,7 +310,7 @@
 
             <article class="card card--tablet">
               <div class="card__image">
-                <img src="assets/screenshots/tablet.jpg" alt="Driver Console tablet showing RecycLA route with real-time completion tracking" loading="lazy">
+                <img src="assets/screenshots/tablet.jpg" alt="Driver Console on tablet with real-time route tracking" loading="lazy">
               </div>
               <div class="card__body">
                 <span class="chip chip--tablet">Tablet</span>
@@ -650,7 +644,7 @@
                 <div class="fd-device fd-device--tablet">
                   <div class="fd-device__chrome">
                     <div class="fd-device__screen">
-                      <img src="assets/screenshots/tablet.jpg" alt="Driver Console on tablet — RecycLA route completion in dark theme" loading="lazy" width="1024" height="640" />
+                      <img src="assets/screenshots/tablet.jpg" alt="Driver Console on tablet — route completion in dark theme" loading="lazy" width="1024" height="640" />
                     </div>
                   </div>
                   <div class="fd-device__label">Driver Console</div>
@@ -863,7 +857,7 @@
 
             <figure class="sb-shot">
               <img src="assets/screenshots/client-portal.jpg" alt="GigaFleet Special Projects dashboard showing SB1383 compliance: 600 stops, 405 completed, 68% rate, 30 exceptions" loading="lazy">
-              <figcaption class="sb-shot-cap">Special Projects module — WM Colorado / RecycLA</figcaption>
+              <figcaption class="sb-shot-cap">Special Projects module — live compliance tracking</figcaption>
             </figure>
 
             <ul class="sb-features" role="list">
@@ -939,7 +933,7 @@
 
           <div class="sb-cta">
             <a href="#demo" class="sb-cta-btn">
-              See how WM Colorado runs SB1383 compliance on GigaFleet
+              See SB1383 compliance running live on GigaFleet
               <span class="cta-arrow" aria-hidden="true">&#x2192;</span>
             </a>
           </div>
@@ -1110,7 +1104,7 @@
 
                 <tr>
                   <td class="gf-cmp-td td-feat">REST API + Webhooks in production</td>
-                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">REST API and Webhooks live today — City of Scottsdale, City of Tucson, FleetGenius, and Tower-UWS are all connected</span></div></td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">REST API and Webhooks in production — live B2B integrations with city systems and 3rd-party platforms</span></div></td>
                   <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-limited">~</span><span class="gf-cmp-cell-text t-limited">Limited API coverage or Webhook support on roadmap — no production B2B integrations</span></div></td>
                 </tr>
 
@@ -1235,7 +1229,7 @@
         <div class="gf-cta__right">
           <div class="gf-cta__actions">
             <a href="#" class="gf-cta__btn-primary">Book a Demo &nbsp;→</a>
-            <a href="mailto:hello@gigafleet.com" class="gf-cta__btn-ghost">
+            <a href="mailto:sales@gigaent.com" class="gf-cta__btn-ghost">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="1" y="3.5" width="14" height="10" rx="1.5"/>
                 <path d="M1.5 4.5 L8 9 L14.5 4.5"/>
@@ -1289,7 +1283,7 @@
         </a>
         <p class="footer-tagline">The operating system for serious waste haulers.</p>
         <address class="footer-contact" aria-label="Contact information">
-          <a href="mailto:hello@gigafleet.com" class="footer-contact__link">hello@gigafleet.com</a>
+          <a href="mailto:sales@gigaent.com" class="footer-contact__link">sales@gigaent.com</a>
         </address>
       </div>
 
@@ -1333,7 +1327,7 @@
             <li><a href="#customers" class="footer-nav__link">Customers</a></li>
             <li><a href="#demo" class="footer-nav__link">Book a Demo</a></li>
             <li><!-- sign-in removed --></li>
-            <li><a href="mailto:hello@gigafleet.com" class="footer-nav__link">Contact</a></li>
+            <li><a href="mailto:sales@gigaent.com" class="footer-nav__link">Contact</a></li>
           </ul>
         </div>
 
@@ -1447,6 +1441,87 @@
 
   <!-- Deferred feature JS (scroll-to-top, CTA entrance animation) -->
   <script src="js/main.js" defer></script>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BOOK A DEMO MODAL
+       ═══════════════════════════════════════════════════════════════ -->
+  <div id="gf-modal-backdrop" class="gf-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="gf-modal-title" hidden>
+    <div class="gf-modal" role="document">
+      <button type="button" class="gf-modal__close" id="gf-modal-close" aria-label="Close">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>
+      </button>
+
+      <!-- Default form state -->
+      <div class="gf-modal__body" id="gf-modal-form-wrap">
+        <div class="gf-modal__header">
+          <span class="gf-modal__eyebrow">45-Minute Walkthrough</span>
+          <h2 class="gf-modal__title" id="gf-modal-title">Book a Demo</h2>
+          <p class="gf-modal__sub">Tell us a bit about your operation and we'll tailor the walkthrough to what matters most to you.</p>
+        </div>
+
+        <form class="gf-modal__form" id="gf-demo-form" novalidate>
+          <div class="gf-form-row gf-form-row--2">
+            <div class="gf-form-group">
+              <label class="gf-form-label" for="gf-f-name">Full name <span aria-hidden="true">*</span></label>
+              <input class="gf-form-input" type="text" id="gf-f-name" name="name" required autocomplete="name" placeholder="Jane Smith">
+            </div>
+            <div class="gf-form-group">
+              <label class="gf-form-label" for="gf-f-company">Organization <span aria-hidden="true">*</span></label>
+              <input class="gf-form-input" type="text" id="gf-f-company" name="company" required autocomplete="organization" placeholder="City of Mesa">
+            </div>
+          </div>
+
+          <div class="gf-form-row gf-form-row--2">
+            <div class="gf-form-group">
+              <label class="gf-form-label" for="gf-f-email">Work email <span aria-hidden="true">*</span></label>
+              <input class="gf-form-input" type="email" id="gf-f-email" name="email" required autocomplete="email" placeholder="jane@cityofmesa.gov">
+            </div>
+            <div class="gf-form-group">
+              <label class="gf-form-label" for="gf-f-phone">Phone <span class="gf-form-optional">(optional)</span></label>
+              <input class="gf-form-input" type="tel" id="gf-f-phone" name="phone" autocomplete="tel" placeholder="+1 (480) 555-0100">
+            </div>
+          </div>
+
+          <div class="gf-form-group">
+            <label class="gf-form-label" for="gf-f-focus">What do you need most?</label>
+            <select class="gf-form-input gf-form-select" id="gf-f-focus" name="focus">
+              <option value="">Select your primary focus…</option>
+              <option value="Dispatch &amp; Routing">Dispatch &amp; Routing</option>
+              <option value="SB1383 / Compliance Reporting">SB1383 / Compliance Reporting</option>
+              <option value="Driver Mobile App">Driver Mobile App</option>
+              <option value="Client Portal">Client Portal</option>
+              <option value="Dashboards &amp; Reporting">Dashboards &amp; Reporting</option>
+              <option value="White-label / Multi-org">White-label / Multi-org</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+
+          <div class="gf-form-group">
+            <label class="gf-form-label" for="gf-f-notes">Anything else we should know? <span class="gf-form-optional">(optional)</span></label>
+            <textarea class="gf-form-input gf-form-textarea" id="gf-f-notes" name="notes" rows="3" placeholder="Fleet size, contract type, current tools, timeline…"></textarea>
+          </div>
+
+          <div class="gf-form-error" id="gf-form-error" hidden>Please fill in all required fields.</div>
+
+          <button type="submit" class="gf-form-submit">
+            Send Request &nbsp;→
+          </button>
+        </form>
+      </div>
+
+      <!-- Success state (shown after submit) -->
+      <div class="gf-modal__success" id="gf-modal-success" hidden>
+        <div class="gf-success-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#0D9488" stroke-width="2"/><polyline points="14,24 21,31 34,17" stroke="#0D9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2 class="gf-success-title">Request sent!</h2>
+        <p class="gf-success-sub">We'll be in touch within one business day to confirm your demo time.</p>
+        <button type="button" class="gf-modal__close-btn js-modal-close">Close</button>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
