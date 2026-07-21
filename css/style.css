@@ -645,7 +645,7 @@ body.mobile-menu-open { overflow: hidden; }
 .gf-m__eyebrow { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.17em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 14px; }
 .gf-m__headline { font-size: clamp(26px,3.8vw,44px); font-weight: 700; letter-spacing: -0.025em; color: var(--white); text-wrap: balance; line-height: 1.12; margin-bottom: clamp(48px,7vw,80px); max-width: 560px; }
 .gf-m__headline-kicker { color: var(--teal-light); }
-.gf-m__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+.gf-m__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
 .gf-m__card { background: var(--slate); border: 1px solid rgba(13,148,136,0.18); border-top: 3px solid var(--teal); padding: 36px 26px 32px; position: relative; transition: background 0.22s ease, box-shadow 0.22s ease, border-top-color 0.22s ease; }
 .gf-m__card:hover { background: #22304A; border-top-color: var(--teal-light); box-shadow: 0 0 0 1px rgba(20,184,166,0.2), 0 0 40px rgba(13,148,136,0.18), 0 4px 20px rgba(0,0,0,0.45); }
 .gf-m__card--green { border-color: rgba(22,163,74,0.2); border-top-color: var(--green); }
