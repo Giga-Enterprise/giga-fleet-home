@@ -1158,3 +1158,7 @@ body.mobile-menu-open { overflow: hidden; }
 .mobile-demo-bar .btn { width: 100%; justify-content: center; }
 @media (max-width: 768px) { .mobile-demo-bar { display: block; } }
 @media (prefers-reduced-motion: reduce) { .mobile-demo-bar { transition: none; } }
+
+/* Comparison capability tooltips (#24) */
+.gf-tip { cursor: help; border-bottom: 1px dotted rgba(13,148,136,0.55); }
+.gf-tip:hover, .gf-tip:focus-visible { border-bottom-color: var(--teal, #0D9488); outline: none; }
