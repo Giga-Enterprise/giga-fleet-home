@@ -2,6 +2,7 @@
   "hosting": {
     "site": "giga-fleet-home",
     "public": ".",
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       ".firebaserc",
