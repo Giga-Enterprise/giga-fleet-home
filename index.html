@@ -1426,72 +1426,17 @@
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>
       </button>
 
-      <!-- Default form state -->
-      <div class="gf-modal__body" id="gf-modal-form-wrap">
+      <div class="gf-modal__body gf-modal__body--book" id="gf-modal-form-wrap">
         <div class="gf-modal__header">
           <span class="gf-modal__eyebrow">45-Minute Walkthrough</span>
           <h2 class="gf-modal__title" id="gf-modal-title">Book a Demo</h2>
-          <p class="gf-modal__sub">Tell us a bit about your operation and we'll tailor the walkthrough to what matters most to you.</p>
         </div>
-
-        <form class="gf-modal__form" id="gf-demo-form" novalidate>
-          <div class="gf-form-row gf-form-row--2">
-            <div class="gf-form-group">
-              <label class="gf-form-label" for="gf-f-name">Full name <span aria-hidden="true">*</span></label>
-              <input class="gf-form-input" type="text" id="gf-f-name" name="name" required autocomplete="name" placeholder="Jane Smith">
-            </div>
-            <div class="gf-form-group">
-              <label class="gf-form-label" for="gf-f-company">Organization <span aria-hidden="true">*</span></label>
-              <input class="gf-form-input" type="text" id="gf-f-company" name="company" required autocomplete="organization" placeholder="City of Mesa">
-            </div>
-          </div>
-
-          <div class="gf-form-row gf-form-row--2">
-            <div class="gf-form-group">
-              <label class="gf-form-label" for="gf-f-email">Work email <span aria-hidden="true">*</span></label>
-              <input class="gf-form-input" type="email" id="gf-f-email" name="email" required autocomplete="email" placeholder="jane@cityofmesa.gov">
-            </div>
-            <div class="gf-form-group">
-              <label class="gf-form-label" for="gf-f-phone">Phone <span class="gf-form-optional">(optional)</span></label>
-              <input class="gf-form-input" type="tel" id="gf-f-phone" name="phone" autocomplete="tel" placeholder="+1 (480) 555-0100">
-            </div>
-          </div>
-
-          <div class="gf-form-group">
-            <label class="gf-form-label" for="gf-f-focus">What do you need most?</label>
-            <select class="gf-form-input gf-form-select" id="gf-f-focus" name="focus">
-              <option value="">Select your primary focus…</option>
-              <option value="Dispatch &amp; Routing">Dispatch &amp; Routing</option>
-              <option value="SB1383 / Compliance Reporting">SB1383 / Compliance Reporting</option>
-              <option value="Driver Mobile App">Driver Mobile App</option>
-              <option value="Client Portal">Client Portal</option>
-              <option value="Dashboards &amp; Reporting">Dashboards &amp; Reporting</option>
-              <option value="White-label / Multi-org">White-label / Multi-org</option>
-              <option value="Something else">Something else</option>
-            </select>
-          </div>
-
-          <div class="gf-form-group">
-            <label class="gf-form-label" for="gf-f-notes">Anything else we should know? <span class="gf-form-optional">(optional)</span></label>
-            <textarea class="gf-form-input gf-form-textarea" id="gf-f-notes" name="notes" rows="3" placeholder="Fleet size, contract type, current tools, timeline…"></textarea>
-          </div>
-
-          <div class="gf-form-error" id="gf-form-error" hidden>Please fill in all required fields.</div>
-
-          <button type="submit" class="gf-form-submit">
-            Send Request &nbsp;→
-          </button>
-        </form>
-      </div>
-
-      <!-- Success state (shown after submit) -->
-      <div class="gf-modal__success" id="gf-modal-success" hidden>
-        <div class="gf-success-icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#0D9488" stroke-width="2"/><polyline points="14,24 21,31 34,17" stroke="#0D9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="gf-modal__booking">
+          <iframe id="gf-booking-frame"
+            data-src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1pgvSUc8pRi4fvvbfXMG76eZCqtcpIn_Vk8RFZRAu6EQM8nHDrKz-YNt6rto57Vzj8kZKgTB-O?gv=true"
+            title="Book a GigaFleet demo" frameborder="0"></iframe>
         </div>
-        <h2 class="gf-success-title">Request sent!</h2>
-        <p class="gf-success-sub">We'll be in touch within one business day to confirm your demo time.</p>
-        <button type="button" class="gf-modal__close-btn js-modal-close">Close</button>
+        <p class="gf-modal__fallback">Prefer a new tab? <a href="https://calendar.app.google/K9rHzR2N1Yo9vpKr7" target="_blank" rel="noopener">Open the booking page &rarr;</a></p>
       </div>
 
     </div>

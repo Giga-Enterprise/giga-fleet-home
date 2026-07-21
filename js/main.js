@@ -34,27 +34,18 @@
     }
   }
 
-  /* ── Book a Demo modal ────────────────────────────────────────── */
-  var backdrop  = document.getElementById('gf-modal-backdrop');
-  var formWrap  = document.getElementById('gf-modal-form-wrap');
-  var success   = document.getElementById('gf-modal-success');
-  var form      = document.getElementById('gf-demo-form');
-  var errorMsg  = document.getElementById('gf-form-error');
+  /* ── Book a Demo modal (Google Calendar booking embed) ────────── */
+  var backdrop = document.getElementById('gf-modal-backdrop');
+  var bframe   = document.getElementById('gf-booking-frame');
 
   function openModal() {
     if (!backdrop) return;
+    // load the Google booking iframe on first open (privacy + perf)
+    if (bframe && !bframe.src && bframe.getAttribute('data-src')) {
+      bframe.src = bframe.getAttribute('data-src');
+    }
     backdrop.hidden = false;
     document.body.classList.add('modal-open');
-    // reset to form state
-    if (formWrap) formWrap.hidden = false;
-    if (success)  success.hidden  = true;
-    if (errorMsg) errorMsg.hidden = true;
-    if (form)     form.reset();
-    // focus first field
-    setTimeout(function () {
-      var first = backdrop.querySelector('input, select, textarea');
-      if (first) first.focus();
-    }, 60);
   }
 
   function closeModal() {
@@ -84,50 +75,6 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && backdrop && !backdrop.hidden) closeModal();
   });
-
-  // Form submit
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var name    = form.elements['name'].value.trim();
-      var company = form.elements['company'].value.trim();
-      var email   = form.elements['email'].value.trim();
-      var phone   = form.elements['phone'].value.trim();
-      var focus   = form.elements['focus'].value;
-      var notes   = form.elements['notes'].value.trim();
-
-      // Validate required fields
-      var valid = true;
-      ['name','company','email'].forEach(function (field) {
-        var el = form.elements[field];
-        if (!el.value.trim()) { el.classList.add('is-invalid'); valid = false; }
-        else el.classList.remove('is-invalid');
-      });
-
-      if (!valid) {
-        if (errorMsg) errorMsg.hidden = false;
-        return;
-      }
-      if (errorMsg) errorMsg.hidden = true;
-
-      // Build mailto
-      var subject = encodeURIComponent('Demo Request — ' + company);
-      var body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Company: ' + company + '\n' +
-        'Email: ' + email + '\n' +
-        (phone ? 'Phone: ' + phone + '\n' : '') +
-        (focus ? 'Focus: ' + focus + '\n' : '') +
-        (notes ? '\nNotes:\n' + notes : '')
-      );
-      window.location.href = 'mailto:sales@gigaent.com?subject=' + subject + '&body=' + body;
-
-      // Show success
-      if (formWrap) formWrap.hidden = true;
-      if (success)  success.hidden  = false;
-    });
-  }
 
   /* ── Prevent body scroll when modal open ─────────────────────── */
   var style = document.createElement('style');
