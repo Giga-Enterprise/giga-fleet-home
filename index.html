@@ -194,7 +194,7 @@
               <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>Auto-routing</span>
               <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>White-label portals</span>
               <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>REST APIs + Webhooks</span>
-              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>BigQuery analytics</span>
+              <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>Advanced analytics</span>
               <span class="gf-feature"><span class="gf-feature-tick" aria-hidden="true">✓</span>SB1383 compliant</span>
             </div>
 
@@ -275,17 +275,17 @@
             </div>
 
             <div class="gf-m__card gf-m__card--green">
-              <span class="gf-m__stat">99.99999%</span>
+              <span class="gf-m__stat">99.9%</span>
               <div class="gf-m__divider"></div>
               <p class="gf-m__label">Infrastructure uptime</p>
-              <p class="gf-m__sub">Firebase&thinsp;/&thinsp;Google Edge</p>
+              <p class="gf-m__sub">Redundant cloud infrastructure</p>
             </div>
 
             <div class="gf-m__card">
               <span class="gf-m__stat">0</span>
               <div class="gf-m__divider"></div>
               <p class="gf-m__label">Single points of failure.</p>
-              <p class="gf-m__sub">Firebase-backed, always-on.</p>
+              <p class="gf-m__sub">Redundant and always-on.</p>
             </div>
 
           </div>
@@ -707,7 +707,7 @@
             <div>
               <span class="eyebrow">Intelligence &amp; Automation</span>
               <h2 class="intel-headline" id="intel-h2">Visibility from the curb to the boardroom.</h2>
-              <p class="intel-intro">GigaFleet connects field operations to BigQuery analytics, giving managers real-time dashboards and historical analysis without a BI team.</p>
+              <p class="intel-intro">GigaFleet connects field operations to advanced analytics, giving managers real-time dashboards and historical analysis without a BI team.</p>
             </div>
 
             <div class="pipeline" aria-label="GigaFleet data pipeline: field operations to dashboards">
@@ -756,7 +756,7 @@
                     <rect x="3" y="3" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
                   </svg>
                 </div>
-                <span class="pipe-label">BigQuery</span>
+                <span class="pipe-label">Analytics</span>
               </div>
 
               <div class="pipe-arrow" aria-hidden="true">
@@ -795,14 +795,8 @@
 
             <article class="tile tile-bq" role="listitem">
               <span class="tile-badge">Data</span>
-              <h3 class="tile-name">BigQuery Analytics</h3>
-              <p class="tile-desc">Raw operational data in Google BigQuery, partitioned by schedule date and ready for any downstream pipeline or analysis.</p>
-              <div class="tile-code" aria-hidden="true">
-                SELECT route_id, SUM(stops_completed)<br>
-                FROM `gf.routes`<br>
-                WHERE schedule_date = @date<br>
-                GROUP BY route_id
-              </div>
+              <h3 class="tile-name">Advanced Analytics</h3>
+              <p class="tile-desc">Your operational data, structured and ready for dashboards, reporting, and any downstream analysis.</p>
             </article>
 
             <article class="tile tile-auto" role="listitem">
@@ -1041,8 +1035,8 @@
                 </svg>
               </div>
               <div class="gf-arch-label">Reliability</div>
-              <div class="gf-arch-name">99.99999% Uptime</div>
-              <div class="gf-arch-body">Firebase on Google's global edge network. Your operation doesn't stop because a server does. No maintenance windows, no regional outages to manage.</div>
+              <div class="gf-arch-name">99.9% Uptime</div>
+              <div class="gf-arch-body">Redundant, always-on infrastructure. Your operation doesn't stop because a server does — no maintenance windows, no regional outages to manage.</div>
             </div>
 
             <div class="gf-arch-tile">
@@ -1142,8 +1136,8 @@
 
                 <tr>
                   <td class="gf-cmp-td td-feat">Custom Dashboard Builder</td>
-                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Dashboard Builder with BigQuery analytics — build any view, any metric, any slice of your data</span></div></td>
-                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Fixed reports only — no custom queries, no cross-dataset analysis, no BigQuery export</span></div></td>
+                  <td class="gf-cmp-td td-gf"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-yes">✓</span><span class="gf-cmp-cell-text t-yes">Dashboard Builder with full analytics — build any view, any metric, any slice of your data</span></div></td>
+                  <td class="gf-cmp-td td-other"><div class="gf-cmp-cell"><span class="gf-cmp-dot dot-no">–</span><span class="gf-cmp-cell-text t-no">Fixed reports only — no custom queries, no cross-dataset analysis, no raw-data export</span></div></td>
                 </tr>
 
               </tbody>
@@ -1202,7 +1196,7 @@
                 <rect x="1" y="3.5" width="14" height="10" rx="1.5"/>
                 <path d="M1.5 4.5 L8 9 L14.5 4.5"/>
               </svg>
-              Email Steven Fenzl
+              Contact Sales
             </a>
           </div>
 
@@ -1291,7 +1285,7 @@
           <ul role="list">
             <li><a href="#architecture" class="footer-nav__link">REST API</a></li>
             <li><a href="#architecture" class="footer-nav__link">Webhooks</a></li>
-            <li><a href="#intelligence" class="footer-nav__link">BigQuery</a></li>
+            <li><a href="#intelligence" class="footer-nav__link">Analytics</a></li>
             <li><a href="#architecture" class="footer-nav__link">White-label</a></li>
           </ul>
         </div>
