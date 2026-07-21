@@ -1137,3 +1137,24 @@ body.mobile-menu-open { overflow: hidden; }
   transition: background 0.14s;
 }
 .gf-modal__close-btn:hover { background: rgba(13,148,136,0.2); }
+
+/* ────────────────────────────────────────────────────────────
+   Sticky mobile Book-a-Demo bar (#21) — mobile only, reveals on scroll
+   ──────────────────────────────────────────────────────────── */
+.mobile-demo-bar {
+  display: none;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 90;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(15, 23, 42, 0.97);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateY(110%);
+  transition: transform 0.25s ease;
+}
+.mobile-demo-bar.is-visible { transform: translateY(0); }
+.mobile-demo-bar .btn { width: 100%; justify-content: center; }
+@media (max-width: 768px) { .mobile-demo-bar { display: block; } }
+@media (prefers-reduced-motion: reduce) { .mobile-demo-bar { transition: none; } }

@@ -31,6 +31,42 @@
   <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://gigafleet.com/" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gigafleet.com/#org",
+        "name": "Giga Enterprises",
+        "url": "https://gigafleet.com/",
+        "logo": "https://gigafleet.com/assets/apple-touch-icon.png",
+        "email": "sales@gigaent.com",
+        "description": "Giga Enterprises builds GigaFleet, the fleet-operations platform for waste haulers and municipalities.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Costa Mesa",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "GigaFleet",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "url": "https://gigafleet.com/",
+        "description": "The operating system for serious waste haulers — dispatch, routing, field operations, client portals, analytics, and SB1383 compliance.",
+        "publisher": { "@id": "https://gigafleet.com/#org" }
+      }
+    ]
+  }
+  </script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -1290,6 +1326,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Sticky mobile Book-a-Demo bar -->
+  <div class="mobile-demo-bar" aria-hidden="true">
+    <button type="button" class="btn btn--primary js-book-demo">Book a Demo</button>
+  </div>
 
   <!-- Scroll-to-top button -->
   <button

@@ -13,6 +13,14 @@
     });
   }
 
+  /* ── Sticky mobile Book-a-Demo bar — reveal past the hero ─────── */
+  var demoBar = document.querySelector('.mobile-demo-bar');
+  if (demoBar) {
+    window.addEventListener('scroll', function () {
+      demoBar.classList.toggle('is-visible', window.scrollY > 480);
+    }, { passive: true });
+  }
+
   /* ── CTA entrance animation ───────────────────────────────────── */
   if (window.IntersectionObserver) {
     var ctaTargets = document.querySelectorAll('.gf-cta__left, .gf-cta__right');
