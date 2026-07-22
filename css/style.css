@@ -1171,5 +1171,3 @@ body.mobile-menu-open { overflow: hidden; }
 .gf-modal__fallback { margin-top: 0.85rem; text-align: center; font-size: 13px; color: #94A3B8; }
 .gf-modal__fallback a { color: var(--teal-light, #14B8A6); }
 
-/* Animated logo pulse — flows along the trend line into the arrow (#logo) */
-@media (prefers-reduced-motion: reduce) { .gf-logo-pulse { display: none; } }
