@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <defs>
+    <style>
+      .bg { fill: #F7F6F2; }
+      .card { fill: #FBFBF9; stroke: #D4D1CA; stroke-width: 2; rx: 28; }
+      .title { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 50px; font-weight: 760; fill: #20242A; letter-spacing: -2px; }
+      .sub { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 22px; fill: #5F6368; }
+      .label { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 800; fill: #687076; letter-spacing: 1.4px; }
+      .note { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 18px; fill: #53585D; }
+      .tiny { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 14px; fill: #777B80; }
+      .box-warm { fill: #F3EEE4; stroke: #102A43; stroke-width: 8; }
+      .box-softblue { fill: #E4EDF5; stroke: #102A43; stroke-width: 8; }
+      .box-dark { fill: #102A43; stroke: #102A43; stroke-width: 8; }
+      .cream { fill: #F7F6F2; }
+      .blue { fill: #102A43; }
+      .green { fill: #4E8A2C; }
+      .orange { fill: #DA7101; }
+      .orange2 { fill: #F28A1A; }
+      .stroke-cream { stroke: #F7F6F2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-blue { stroke: #102A43; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-orange { stroke: #DA7101; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-orange2 { stroke: #F28A1A; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .giga_f01 { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-weight: 560; letter-spacing: 2px; }
+      .giga_f03 { font-family: Segoe UI, Inter, Avenir Next, Arial, sans-serif; font-weight: 560; letter-spacing: 2.5px; }
+      .bottom { font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif; font-size: 12.5px; font-weight: 800; letter-spacing: .95px; text-anchor: middle; }
+      .guide { stroke: #D4D1CA; stroke-width: 1.5; stroke-dasharray: 5 5; }
+      .pill { fill: #EDEBE4; rx: 14; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1800" height="1200"/>
+  <text x="80" y="86" class="title">Matched dark correction: versions 1 and 3</text>
+  <text x="80" y="126" class="sub">Dark versions now use the exact same GIGA font class, weight, and letter spacing as their light counterparts.</text>
+
+  <rect x="80" y="158" width="1360" height="42" class="pill"/>
+  <text x="105" y="185" class="note">Pair A uses the Version 1 font. Pair B uses the Version 3 font. Only colors/backgrounds change between light and dark.</text>
+
+  <!-- Pair A: F01 warm and exact dark match -->
+  <rect x="80" y="245" width="520" height="330" class="card"/>
+  <text x="115" y="285" class="label">G01 / VERSION 1 WARM</text>
+  <line x1="340" y1="330" x2="340" y2="470" class="guide"/>
+  <rect x="212" y="335" width="256" height="132" rx="26" class="box-warm"/>
+  <circle cx="240" cy="383" r="8" class="green"/>
+  <circle cx="264" cy="364" r="8" class="green"/>
+  <circle cx="288" cy="390" r="8" class="green"/>
+  <circle cx="324" cy="414" r="8" class="green"/>
+  <path d="M240 383 L264 364 L288 390 L324 414" class="stroke-blue" stroke-width="4.3"/>
+  <text x="309" y="391" class="giga_f01 blue" font-size="49">GIGA</text>
+  <path d="M324 414 H443" class="stroke-orange" stroke-width="6"/>
+  <path d="M425 400 L443 414 L425 428" class="stroke-orange" stroke-width="6"/>
+  <text x="340" y="448" class="bottom orange">PLATFORMS • CONNECTED OPS</text>
+  <text x="115" y="530" class="note">Original version 1 font treatment.</text>
+
+  <rect x="640" y="245" width="520" height="330" class="card"/>
+  <text x="675" y="285" class="label">G02 / VERSION 1 DARK MATCH</text>
+  <line x1="900" y1="330" x2="900" y2="470" class="guide"/>
+  <rect x="772" y="335" width="256" height="132" rx="26" class="box-dark"/>
+  <circle cx="800" cy="383" r="8" class="green"/>
+  <circle cx="824" cy="364" r="8" class="green"/>
+  <circle cx="848" cy="390" r="8" class="green"/>
+  <circle cx="884" cy="414" r="8" class="green"/>
+  <path d="M800 383 L824 364 L848 390 L884 414" class="stroke-cream" stroke-width="4.3"/>
+  <text x="869" y="391" class="giga_f01 cream" font-size="49">GIGA</text>
+  <path d="M884 414 H1003" class="stroke-orange2" stroke-width="6"/>
+  <path d="M985 400 L1003 414 L985 428" class="stroke-orange2" stroke-width="6"/>
+  <text x="900" y="448" class="bottom orange2">PLATFORMS • CONNECTED OPS</text>
+  <text x="675" y="530" class="note">Same exact font as G01, dark colors only.</text>
+
+  <!-- Pair B: F03 soft blue and exact dark match -->
+  <rect x="80" y="625" width="520" height="330" class="card"/>
+  <text x="115" y="665" class="label">G03 / VERSION 3 SOFT BLUE</text>
+  <line x1="340" y1="710" x2="340" y2="850" class="guide"/>
+  <rect x="212" y="715" width="256" height="132" rx="26" class="box-softblue"/>
+  <circle cx="240" cy="763" r="8" class="green"/>
+  <circle cx="264" cy="744" r="8" class="green"/>
+  <circle cx="288" cy="770" r="8" class="green"/>
+  <circle cx="324" cy="794" r="8" class="green"/>
+  <path d="M240 763 L264 744 L288 770 L324 794" class="stroke-blue" stroke-width="4.3"/>
+  <text x="309" y="771" class="giga_f03 blue" font-size="49">GIGA</text>
+  <path d="M324 794 H443" class="stroke-orange" stroke-width="6"/>
+  <path d="M425 780 L443 794 L425 808" class="stroke-orange" stroke-width="6"/>
+  <text x="340" y="828" class="bottom orange">PLATFORMS • CONNECTED OPS</text>
+  <text x="115" y="910" class="note">Original version 3 font treatment.</text>
+
+  <rect x="640" y="625" width="520" height="330" class="card"/>
+  <text x="675" y="665" class="label">G04 / VERSION 3 DARK MATCH</text>
+  <line x1="900" y1="710" x2="900" y2="850" class="guide"/>
+  <rect x="772" y="715" width="256" height="132" rx="26" class="box-dark"/>
+  <circle cx="800" cy="763" r="8" class="green"/>
+  <circle cx="824" cy="744" r="8" class="green"/>
+  <circle cx="848" cy="770" r="8" class="green"/>
+  <circle cx="884" cy="794" r="8" class="green"/>
+  <path d="M800 763 L824 744 L848 770 L884 794" class="stroke-cream" stroke-width="4.3"/>
+  <text x="869" y="771" class="giga_f03 cream" font-size="49">GIGA</text>
+  <path d="M884 794 H1003" class="stroke-orange2" stroke-width="6"/>
+  <path d="M985 780 L1003 794 L985 808" class="stroke-orange2" stroke-width="6"/>
+  <text x="900" y="828" class="bottom orange2">PLATFORMS • CONNECTED OPS</text>
+  <text x="675" y="910" class="note">Same exact font as G03, dark colors only.</text>
+
+  <!-- larger direct comparison -->
+  <rect x="1220" y="245" width="500" height="710" class="card"/>
+  <text x="1255" y="285" class="label">DIRECT STACKED COMPARISON</text>
+  <text x="1255" y="330" class="note">Version 1 pair:</text>
+  <text x="1255" y="385" class="giga_f01 blue" font-size="64">GIGA</text>
+  <text x="1255" y="455" class="giga_f01 cream" font-size="64" style="paint-order: stroke; stroke: #102A43; stroke-width: 8px;">GIGA</text>
+  <text x="1255" y="535" class="note">Version 3 pair:</text>
+  <text x="1255" y="590" class="giga_f03 blue" font-size="64">GIGA</text>
+  <text x="1255" y="660" class="giga_f03 cream" font-size="64" style="paint-order: stroke; stroke: #102A43; stroke-width: 8px;">GIGA</text>
+  <text x="1255" y="760" class="tiny">This side panel is only to verify the type treatment. The dark text is outlined so it is visible on the board.</text>
+  <text x="1255" y="810" class="note">If one pair wins, I’ll remove the guides and clean it into a final light/dark asset set.</text>
+</svg>

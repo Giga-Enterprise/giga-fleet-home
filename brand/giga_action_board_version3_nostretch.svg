@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="620" viewBox="0 0 330 155">
+  <defs>
+    <style>
+      .box { fill: #E4EDF5; stroke: #102A43; stroke-width: 8; }
+      .blue { fill: #102A43; }
+      .green { fill: #4E8A2C; }
+      .orange { fill: #DA7101; }
+      .connector { stroke: #102A43; stroke-width: 4.2; stroke-linecap: round; fill: none; }
+      .giga { font-family: "Arial", "Liberation Sans", "DejaVu Sans", sans-serif; font-size: 42px; font-weight: 700; letter-spacing: 1px; fill: #102A43; }
+      .bottom { font-family: "Arial", "Liberation Sans", "DejaVu Sans", sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .85px; text-anchor: middle; fill: #DA7101; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="330" height="155" rx="26" class="box"/>
+
+  <circle cx="34" cy="55" r="7" class="green"/>
+  <circle cx="60" cy="35" r="7" class="green"/>
+  <circle cx="86" cy="62" r="7" class="green"/>
+  <circle cx="126" cy="88" r="7" class="green"/>
+  <path d="M34 55 L60 35 L86 62 L126 88" class="connector"/>
+
+  <text x="120" y="66" class="giga">GIGA</text>
+
+  <rect x="126" y="85" width="160" height="5" rx="2.5" fill="#DA7101"/>
+  <polygon points="282,75 302,88 282,101" fill="#DA7101"/>
+
+  <text x="165" y="126" class="bottom">PLATFORMS • CONNECTED OPS</text>
+</svg>

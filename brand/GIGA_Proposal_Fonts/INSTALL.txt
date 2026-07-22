@@ -1,0 +1,32 @@
+FONTS FOR GIGA PROPOSALS
+========================
+
+Two free fonts. They are the free substitutes for the typefaces used in
+the Claude interface (Tiempos and Styrene, both commercially licensed).
+
+  Source Serif 4  -> body text in the proposals
+  Inter           -> headings, tables, cover title, and the workbooks
+
+WINDOWS
+  1. Select all four .ttf files
+  2. Right-click -> Install  (or "Install for all users" if offered)
+  3. Close and reopen Word / Excel
+
+MAC
+  1. Select all four .ttf files
+  2. Double-click -> "Install Font" in Font Book
+  3. Close and reopen Word / Excel
+
+These are variable fonts - one file covers every weight from light to bold.
+Windows and Office both support them.
+
+If a document still looks wrong after installing, fully quit Office
+(not just the document window) and reopen.
+
+SENDING TO CLIENTS
+  Export to PDF before sending. PDF embeds the fonts, so the document
+  looks correct on any machine whether or not these are installed.
+
+LICENCE
+  Both are SIL Open Font License - free for commercial use, including
+  client documents. Licence text included.

@@ -8,6 +8,7 @@
       ".firebaserc",
       ".github",
       ".git",
+      "brand",
       "*.md"
     ],
     "headers": [
