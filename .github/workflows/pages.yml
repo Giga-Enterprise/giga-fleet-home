@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Not for publication: brand source artwork and internal reports.
+      # Mirrors the firebase.json "ignore" list — keep the two in sync.
+      - run: rm -rf brand docs
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
