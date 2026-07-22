@@ -16,7 +16,8 @@ The GigaFleet commercial marketing website (giga-fleet-home.web.app) — a **sta
 ## Book-a-Demo modal (the site's one interactive flow)
 
 - Any element with class `js-book-demo` opens the modal (`main.js` wires them all via `openModal()`). **When adding a new "Book a Demo" button, it must have `js-book-demo`** or it silently does nothing — a prior bug shipped a CTA button missing this class.
-- The form (`#gf-demo-form`) does **not** post to a backend — on submit it builds a `mailto:sales@gigaent.com` link and opens the visitor's email client. No lead is captured server-side.
+- The modal embeds a **Google Calendar appointment-scheduling iframe** (`#gf-booking-frame`, lazy — `main.js` copies `data-src` → `src` on first open), plus a "prefer a new tab?" fallback link. Booking the slot *is* the lead capture; there is no form and no backend. Resolved #8 — earlier versions posted a `mailto:` and captured nothing.
+- `Contact Sales` in the Demo CTA is a plain `mailto:sales@gigaent.com` link, deliberately — it is not a demo trigger and must not carry `js-book-demo`.
 
 ## Deploy
 
