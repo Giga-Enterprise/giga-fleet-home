@@ -8,8 +8,8 @@
       ".firebaserc",
       ".github",
       ".git",
-      "brand",
-      "docs",
+      "brand/**",
+      "docs/**",
       "*.md"
     ],
     "headers": [
